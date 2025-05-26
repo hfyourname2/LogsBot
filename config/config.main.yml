@@ -1,0 +1,45 @@
+# Telegram Bot Configuration
+bot:
+  # Bot token from @BotFather
+  token: ""
+  # Bot username (used for generating referral links)
+  username: ""
+  # Admin user IDs (Telegram user IDs as strings)
+  admins:
+    - ""
+
+# Database configuration
+database:
+  host: "127.0.0.1"
+  port: 27017
+  name: "shop"
+
+# Log configuration
+log:
+  # Default price for logs
+  default_price: 40
+
+# Payment configuration
+payment:
+  # Referral reward amount in USD
+  referral_reward: 10
+  
+  # Ethereum payment settings
+  ethereum:
+    min_amount: 10
+    max_amount: 1000
+    expiry_minutes: 60
+    api_keys:
+      etherscan: ""
+      infura: ""
+  
+  # Solana payment settings
+  solana:
+    min_amount: 10
+    max_amount: 1000
+    expiry_minutes: 60
+    api_keys:
+      helius: ""
+      
+  # CoinGecko API key
+  coingecko_api_key: ""
